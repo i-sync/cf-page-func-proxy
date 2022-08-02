@@ -4,9 +4,7 @@ export default {
       if (url.pathname.startsWith('/')) {
         url.hostname="img.viagle.com";
         let new_request=new Request(url,request);
-        let res = fetch(new_request);
-        res.header('cache-control', 'public, max-age=6048000');
-        return res;
+        return fetch(new_request);
       }
       // Otherwise, serve the static assets.
       return env.ASSETS.fetch(request);
