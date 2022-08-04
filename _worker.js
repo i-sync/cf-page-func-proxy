@@ -8,11 +8,11 @@ export default {
         
         new_request.headers.append('x-request', 'CF-Request');
         
-        //return fetch(new_request);  
-        const response = await fetch(new_request);      
-        response.headers.set('Cache-Control', 'public, max-age=604800');
-        response.headers.set('Pragma', 'public');
-        return response;
+        return fetch(new_request);  
+        //const response = await fetch(new_request);      
+        //response.headers.set('Cache-Control', 'public, max-age=604800');
+        //response.headers.set('Pragma', 'public');
+        //return response;
         
         
         // https://developers.cloudflare.com/pages/how-to/add-custom-http-headers/
