@@ -3,7 +3,7 @@ export default {
       let url = new URL(request.url);
       if (url.pathname.startsWith('/')) {
         
-        url.hostname="img.viagle.com";
+        url.hostname="www.viagle.com";
         let new_request=new Request(url,request);
         
         new_request.headers.append('x-request', 'CF-Request');
