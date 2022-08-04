@@ -8,7 +8,7 @@ export default {
         
         //new_request.headers.append('x-request', 'CF-Request');
         
-        return await fetch(new_request);        
+        return fetch(new_request);        
         //response.headers.set('Cache-Control', 'public, max-age=604800');
         //response.headers.set('Pragma', 'public');
         //return response;
