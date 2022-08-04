@@ -6,7 +6,7 @@ export default {
         url.hostname="img.viagle.com";
         let new_request=new Request(url,request);
         
-        new_request.headers.append('x-request', 'CF-Request');
+        //new_request.headers.append('x-request', 'CF-Request');
         
         return await fetch(new_request);        
         //response.headers.set('Cache-Control', 'public, max-age=604800');
